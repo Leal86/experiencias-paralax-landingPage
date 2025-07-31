@@ -1,11 +1,127 @@
-body, html {
+:root {
+	--bg: #E0F2FE;	/* Cor de fundo do menu */
+	--fg: #575a5e; /* Cor de destaque */
+	--hamburger-btn-padding: 8px; /* Padding do botão de menu */
+	--hamburger-btn-size: 32px;	/* Tamanho do botão de menu */
+	--hamburger-btn-gap: 4px; /* Espaçamento das linhas do botão de menu */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
 	margin: 0;
 	font: 16px "Lato", sans-serif;
 	color: #777;
 	height: 100%;
-	
+
 }
 
+body {
+	font-family: sans-serif;
+	overflow-x: hidden;
+	/* Adicione essa linha */
+}
+
+/* HEADER */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
+	background-color: var(--bg);
+	color: #fff;
+	align-items: center;
+}
+
+.button {
+	border-radius: 4px;
+	border: none;
+	background-color: var(--bg);
+	transition: filter 300ms ease-out;
+	cursor: pointer;
+}
+
+.button:hover {
+	filter: brightness(1.2);
+}
+
+.btn-hamburger {
+	width: var(--hamburger-btn-size);
+	height: var(--hamburger-btn-size);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--hamburger-btn-gap);
+	flex-direction: column;
+}
+
+.btn-hamburger i {
+	height: 2px;
+	width: calc(var(--hamburger-btn-size) - 2 * var(--hamburger-btn-padding));
+	background-color: var(--fg);
+	border-radius: 4px;
+	transition: transform 150ms ease-in-out;
+}
+
+.btn-hamburger.active i {
+	position: absolute;
+}
+
+.btn-hamburger.active i {
+	transform: rotate(45deg);
+}
+
+.btn-hamburger.active i:nth-of-type(2) {
+	transform: rotate(-45deg);
+}
+
+nav {
+	width: 100vw;
+	min-height: 100dvh;
+	background-color: var(--bg);
+	position: absolute;
+	top: 0;
+	left: 100vw;
+	padding: 16px;
+	transition: left 150ms ease-out;
+}
+
+nav.active {
+	left: 0;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	gap: 4px;
+}
+
+nav li.close-button {
+	align-self: flex-end;
+}
+
+nav a {
+	display: block;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	padding: 8px 12px;
+	border-radius: 8px;
+	transition: background 300ms ease-in-out;
+}
+
+nav a:hover {
+	background: var(--fg);
+}
+
+/***********************/
 .conteudo {
 	color: #777;
 	background-color: #fff;
@@ -25,7 +141,11 @@ h1 {
 
 /* Efeito Parallax */
 
-.caixa1, .caixa2, .caixa3, .caixa4 {
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4,
+.caixa5 {
 	position: relative;
 	height: 100%;
 	/*opacity: 0.7;*/
@@ -48,7 +168,11 @@ h1 {
 }
 
 .caixa4 {
-	background-image: url(../imagens/imagem4.jpg);
+	background-image: url(../imagens/imagem8.jpg);
+}
+
+.caixa5 {
+	background-image: url(../imagens/imagem7.jpg);
 }
 
 /* Formatação de conteúdo */
@@ -68,4 +192,22 @@ h1 {
 	font-size: 25px;
 	letter-spacing: 5px;
 	text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-hamburger {
+    display: none;
+  }
+
+  nav {
+    position: initial;
+    min-height: auto;
+    width: auto;
+    background: none;
+    padding: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
 }
