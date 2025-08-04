@@ -1,10 +1,34 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 :root {
+	/* Cores do tema */
 	--bg: #E0F2FE;	/* Cor de fundo do menu */
+	--fundo-claro: #FFFFFF;
+	--fundo-escuro: #111827; /* Cor de fundo escuro */
+	--grad-fundo: from-white to-blue-50; /* Gradiente de fundo */
+	--btn-links: #38BDF8; /* Cor dos links do menu */
+	--icon-warning: #FDBA74; /* Cor do ícone de alerta */
+	--enfase: #86EFAC; /* Cor de ênfase */
 	--fg: #575a5e; /* Cor de destaque */
+	--titulos: #1F2937; /* Cor dos títulos */
+	--descricoes: #6B7280; /* Cor das descrições */
+
+	/* Variáveis do botão de menu */
 	--hamburger-btn-padding: 8px; /* Padding do botão de menu */
 	--hamburger-btn-size: 32px;	/* Tamanho do botão de menu */
 	--hamburger-btn-gap: 4px; /* Espaçamento das linhas do botão de menu */
+
+	/* Fontes */
+	--font-titulos: 'Playfair Display', serif; /* Uso: Títulos principais, frases de destaque, hero section. */
+	--font-primaria: 'Inter', sans-serif; /* Uso: Parágrafos, textos de apoio, descrições. */
+	--font-secundaria: 'Open Sans', sans-serif; /* Uso: Textos secundários, legendas, informações adicionais. */
 }
+
+/* Reset básico */
 
 * {
 	margin: 0;
@@ -12,19 +36,35 @@
 	box-sizing: border-box;
 }
 
+/************** Estilos Gerais **************/
+
 body,
 html {
 	margin: 0;
-	font: 16px "Lato", sans-serif;
-	color: #777;
 	height: 100%;
-
 }
 
 body {
-	font-family: sans-serif;
 	overflow-x: hidden;
 	/* Adicione essa linha */
+}
+
+.conteudo {
+	background-color: var(--fundo-claro);
+	text-align: justify;
+	padding: 50px 80px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-family: var(--font-titulos);
+	font-size: 1.5em;
+	color: var(--titulos);
+	text-align: center;
+	text-transform: uppercase;
 }
 
 /* HEADER */
@@ -33,11 +73,23 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding: 16px;
-	background-color: var(--bg);
-	color: #fff;
+	background: var(--bg) url(../imagens/imagem1.jpg) no-repeat center center / cover;
+	color: var(--fundo-claro);
 	align-items: center;
 }
 
+
+.header_titulo {
+	font-size: 1em;
+	color: var(--titulos);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.logo {
+	width: 80px;
+	height: auto;
+}
 .button {
 	border-radius: 4px;
 	border: none;
@@ -84,7 +136,7 @@ header {
 nav {
 	width: 100vw;
 	min-height: 100dvh;
-	background-color: var(--bg);
+	background: var(--bg) url(../imagens/imagem1.jpg) no-repeat center center / cover;
 	position: absolute;
 	top: 0;
 	left: 100vw;
@@ -110,7 +162,7 @@ nav li.close-button {
 nav a {
 	display: block;
 	width: 100%;
-	color: #fff;
+	color: var(--fundo-claro);
 	text-decoration: none;
 	padding: 8px 12px;
 	border-radius: 8px;
@@ -119,24 +171,6 @@ nav a {
 
 nav a:hover {
 	background: var(--fg);
-}
-
-/***********************/
-.conteudo {
-	color: #777;
-	background-color: #fff;
-	text-align: justify;
-	padding: 50px 80px;
-}
-
-p {
-	margin-bottom: 20px;
-}
-
-h1 {
-	text-transform: uppercase;
-	color: #111;
-	text-align: center;
 }
 
 /* Efeito Parallax */
@@ -186,8 +220,8 @@ h1 {
 }
 
 .conteudo-titulo span.titulo {
-	color: #fff;
-	background-color: #111;
+	color: var(--fundo-claro);
+	background-color: var(--fundo-escuro);
 	padding: 18px;
 	font-size: 25px;
 	letter-spacing: 5px;
