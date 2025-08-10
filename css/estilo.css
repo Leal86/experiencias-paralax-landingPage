@@ -6,23 +6,30 @@
 
 :root {
 	/* Cores do tema */
-	--bg: #E0F2FE;	/* Cor de fundo do menu */
-	--fundo-claro: #FFFFFF;
-	--fundo-escuro: #111827; /* Cor de fundo escuro */
-	--grad-fundo: from-white to-blue-50; /* Gradiente de fundo */
-	--btn-links: #38BDF8; /* Cor dos links do menu */
-	--icon-warning: #FDBA74; /* Cor do ícone de alerta */
-	--enfase: #86EFAC; /* Cor de ênfase */
-	--fg: #575a5e; /* Cor de destaque */
-	--titulos: #1F2937; /* Cor dos títulos */
-	--descricoes: #6B7280; /* Cor das descrições */
+	
+	--cor-claro: #FFFFFF; 
+	--cor-cinza: #E0F2FE; 
+	--cor-cinza-enfase: #575a5e; 
+	--cor-cinza-escuro-descricoes: #6B7280; 
+	--cor-azul-claro: #38BDF8; 
+	--cor-laranja-warning: #FDBA74;
+	--cor-verde-enfase: #86EFAC; 
+	--cor-grad-fundo: from-white to-blue-50;
+	--cor-grad-fundo-home: linear-gradient(360deg, #856179 0%, #DC707E 30%, #F7B098 70%,#9ACDC5 100%);
+	--cor-preto: #111827;
+	--cor-transparente: #ffffff00;
+	
+
 
 	/* Variáveis do botão de menu */
+	
 	--hamburger-btn-padding: 8px; /* Padding do botão de menu */
 	--hamburger-btn-size: 32px;	/* Tamanho do botão de menu */
 	--hamburger-btn-gap: 4px; /* Espaçamento das linhas do botão de menu */
 
+
 	/* Fontes */
+
 	--font-titulos: 'Playfair Display', serif; /* Uso: Títulos principais, frases de destaque, hero section. */
 	--font-primaria: 'Inter', sans-serif; /* Uso: Parágrafos, textos de apoio, descrições. */
 	--font-secundaria: 'Open Sans', sans-serif; /* Uso: Textos secundários, legendas, informações adicionais. */
@@ -50,7 +57,7 @@ body {
 }
 
 .conteudo {
-	background-color: var(--fundo-claro);
+	background-color: var(--cor-laranja-warning);
 	text-align: justify;
 	padding: 50px 80px;
 }
@@ -61,10 +68,18 @@ p {
 
 h1 {
 	font-family: var(--font-titulos);
-	font-size: 1.5em;
-	color: var(--titulos);
+	font-size: 1em;
+	color: var(--cor-preto);
 	text-align: center;
 	text-transform: uppercase;
+}
+
+h2 {
+	font-family: var(--font-primaria);
+	font-size: 0.7em;
+	color: var(--cor-cinza-escuro-descricoes);
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 /* HEADER */
@@ -73,15 +88,15 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding: 16px;
-	background: var(--bg) url(../imagens/imagem1.jpg) no-repeat center center / cover;
-	color: var(--fundo-claro);
+	background: var(--cor-laranja-warning) url(../imagens/img-baloes05.jpg) no-repeat center center / cover;
+	color: var(--cor-claro);
 	align-items: center;
 }
 
 
 .header_titulo {
 	font-size: 1em;
-	color: var(--titulos);
+	color: var(--cor-transparente);
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -90,10 +105,11 @@ header {
 	width: 80px;
 	height: auto;
 }
+
 .button {
 	border-radius: 4px;
 	border: none;
-	background-color: var(--bg);
+	background-color: var(--cor-grad-fundo);
 	transition: filter 300ms ease-out;
 	cursor: pointer;
 }
@@ -111,12 +127,13 @@ header {
 	justify-content: center;
 	gap: var(--hamburger-btn-gap);
 	flex-direction: column;
+	background-color: var(--cor-claro);
 }
 
 .btn-hamburger i {
 	height: 2px;
 	width: calc(var(--hamburger-btn-size) - 2 * var(--hamburger-btn-padding));
-	background-color: var(--fg);
+	background-color: var(--cor-cinza-enfase);
 	border-radius: 4px;
 	transition: transform 150ms ease-in-out;
 }
@@ -136,7 +153,7 @@ header {
 nav {
 	width: 100vw;
 	min-height: 100dvh;
-	background: var(--bg) url(../imagens/imagem1.jpg) no-repeat center center / cover;
+	background: var(--cor-grad-fundo-home);
 	position: absolute;
 	top: 0;
 	left: 100vw;
@@ -229,19 +246,19 @@ nav a:hover {
 }
 
 @media screen and (min-width: 768px) {
-  .btn-hamburger {
-    display: none;
-  }
+	.btn-hamburger {
+		display: none;
+	}
 
-  nav {
-    position: initial;
-    min-height: auto;
-    width: auto;
-    background: none;
-    padding: 0;
-  }
+	nav {
+		position: initial;
+		min-height: auto;
+		width: auto;
+		background: none;
+		padding: 0;
+	}
 
-  nav ul {
-    flex-direction: row;
-  }
+	nav ul {
+		flex-direction: row;
+	}
 }
