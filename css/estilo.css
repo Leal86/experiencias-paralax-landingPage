@@ -6,25 +6,26 @@
 
 :root {
 	/* Cores do tema */
-	
-	--cor-claro: #FFFFFF; 
-	--cor-cinza: #E0F2FE; 
-	--cor-cinza-enfase: #575a5e; 
-	--cor-cinza-escuro-descricoes: #6B7280; 
-	--cor-azul-claro: #38BDF8; 
+
+	--cor-claro: #FFFFFF;
+	--cor-cinza: #E0F2FE;
+	--cor-cinza-enfase: #575a5e;
+	--cor-cinza-escuro-descricoes: #6B7280;
+	--cor-azul-claro: #38BDF8;
 	--cor-laranja-warning: #FDBA74;
-	--cor-verde-enfase: #86EFAC; 
+	--cor-verde-enfase: #86EFAC;
 	--cor-grad-fundo: from-white to-blue-50;
-	--cor-grad-fundo-home: linear-gradient(360deg, #856179 0%, #DC707E 30%, #F7B098 70%,#9ACDC5 100%);
+	--cor-grad-fundo-dia: radial-gradient(circle at 70% 25%, #E0F2FE 0%, #aee7ff 100%, #FFFFFF 80%);
+	--cor-grad-fundo-entardecer: linear-gradient(360deg, #856179 0%, #DC707E 30%, #F7B098 70%, #9ACDC5 100%);
 	--cor-preto: #111827;
 	--cor-transparente: #ffffff00;
-	
+
 
 
 	/* Variáveis do botão de menu */
-	
+
 	--hamburger-btn-padding: 8px; /* Padding do botão de menu */
-	--hamburger-btn-size: 32px;	/* Tamanho do botão de menu */
+	--hamburger-btn-size: 32px; /* Tamanho do botão de menu */
 	--hamburger-btn-gap: 4px; /* Espaçamento das linhas do botão de menu */
 
 
@@ -48,16 +49,18 @@
 body,
 html {
 	margin: 0;
-	height: 100%;
+	min-height: 100vh;
+	background: var(--cor-grad-fundo-dia);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 body {
 	overflow-x: hidden;
-	background: var(--cor-grad-fundo);
 }
 
 body.no-scroll {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .conteudo {
@@ -68,18 +71,17 @@ body.no-scroll {
 
 p {
 	font-family: var(--font-primaria);
-	font-size: 0.8em;
+	font-size: 0.9em;
 	text-align: justify;
 	letter-spacing: 0.05em;
 	line-height: 1.5;
-	margin: 1.3em;
-	
+	margin: 2.5em;
 }
 
 h1 {
 	font-family: var(--font-titulos);
-	font-size: 1em;
-	padding: 0.8em 0 0.4em 0;
+	font-size: 1.4em;
+	margin: 1em;
 	color: var(--cor-preto);
 	text-align: center;
 	text-transform: uppercase;
@@ -87,13 +89,13 @@ h1 {
 
 h2 {
 	font-family: var(--font-secundaria);
-	font-size: 0.7em;
+	font-size: 1.2em;
+	margin: 0 1.3em;
 	color: var(--cor-cinza-escuro-descricoes);
 	text-align: center;
-	margin-bottom: 20px;
 }
 
-/* HEADER */
+/****************** HEADER ******************/
 
 header {
 	display: flex;
@@ -112,10 +114,6 @@ header {
 	text-transform: uppercase;
 }
 
-.logo {
-	width: 80px;
-	height: auto;
-}
 
 .button {
 	border-radius: 4px;
@@ -164,7 +162,7 @@ header {
 nav {
 	width: 100vw;
 	min-height: 100dvh;
-	background: var(--cor-grad-fundo-home);
+	background: var(--cor-grad-fundo-entardecer);
 	position: absolute;
 	top: 0;
 	left: 100vw;
@@ -199,6 +197,23 @@ nav a {
 
 nav a:hover {
 	background: var(--fg);
+}
+
+/****************** Section home ******************/
+
+#home p {
+	margin-bottom: 20px;
+}
+
+#home ul {
+	list-style: none;
+	padding: 0;
+}
+
+#home li {
+	font-family: var(--font-primaria);
+	font-size: 0.8em;
+	padding: 1.2em 1em 0 2em;
 }
 
 /* Efeito Parallax */
