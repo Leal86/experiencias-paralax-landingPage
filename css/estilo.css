@@ -56,6 +56,10 @@ body {
 	background: var(--cor-grad-fundo);
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .conteudo {
 	background-color: var(--cor-laranja-warning);
 	text-align: justify;
