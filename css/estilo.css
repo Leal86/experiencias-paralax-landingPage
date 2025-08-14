@@ -17,8 +17,13 @@
 	--cor-grad-fundo: from-white to-blue-50;
 	--cor-grad-fundo-dia: radial-gradient(circle at 80% 15%, #E0F2FE 0%, #38BDF8 100%, #FFFFFF 100%);
 
-	--cor-grad-fundo-new: linear-gradient(to bottom, var(--cor-claro) 0%, var(--cor-verde-enfase) 70%, var(--cor-azul-claro) 20%);
-
+	--cor-grad-fundo-new: linear-gradient(29deg, #87CEEB 0%, /* Azul céu claro */
+			#A8D5BA 40%, /* Verde claro natureza */
+			#FFD59E 70%, /* Laranja suave do pôr do sol */
+			#FFB6B9 100% /* Rosa pastel do entardecer */
+		);
+	--cor-grad-fundo-img:linear-gradient(135deg, rgba(135,206,235,0.6), rgba(168,213,186,0.6), rgba(255,213,158,0.6), rgba(255,182,185,0.6)),
+  url('../imagens/img-baloes06.jpg') center/cover no-repeat;
 	--cor-grad-fundo-entardecer: linear-gradient(360deg, #856179 0%, #DC707E 30%, #F7B098 70%, #9ACDC5 100%);
 	--cor-preto: #111827;
 	--cor-transparente: #ffffff00;
@@ -83,10 +88,10 @@ body.no-scroll {
 
 p {
 	font-family: var(--font-primaria);
-	font-size: 0.9em;
+	font-size: 0.93em;
 	text-align: justify;
-	letter-spacing: 0.05em;
-	line-height: 1.5;
+	letter-spacing: 0.01em;
+	line-height: 1.7;
 	margin: 2.5em;
 }
 
@@ -111,6 +116,7 @@ h2 {
 
 header {
 	display: flex;
+	height: 12vh;
 	justify-content: space-between;
 	padding: 16px;
 	background: var(--cor-laranja-warning) url(../imagens/img-baloes05.jpg) no-repeat center center / cover;
@@ -174,7 +180,7 @@ header {
 nav {
 	width: 100vw;
 	min-height: 100dvh;
-	background: var(--cor-grad-fundo-dia);
+	background: var(--cor-grad-fundo-img);
 	position: absolute;
 	top: 0;
 	left: 100vw;
@@ -186,11 +192,17 @@ nav.active {
 	left: 0;
 }
 
-nav ul {
+.menu-lista {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	gap: 4px;
+	gap: 10px;
+}
+
+.menu-lista-item {
+	font-family: var(--font-secundaria);
+	font-size: medium;
+	padding: 5px 20px;
 }
 
 nav li.close-button {
@@ -199,8 +211,9 @@ nav li.close-button {
 
 nav a {
 	display: block;
-	width: 100%;
-	color: var(--fundo-claro);
+	width: 40%;
+	color: var(--cor-claro);
+	font-weight: 600;
 	text-decoration: none;
 	padding: 8px 12px;
 	border-radius: 8px;
@@ -208,32 +221,77 @@ nav a {
 }
 
 nav a:hover {
-	background: var(--fg);
+	background: var(--cor-cinza-enfase);
 }
 
 /****************** Section home ******************/
 
-#home p {
-	margin-bottom: 20px;
+.section_principal-titulo {
+	color: var(--cor-preto);
 }
 
-.section_principal-linha {
-	border: none;
-	width: 80%;
-	height: 2px;
-	margin: auto;
-	padding: 1em;
+.section_principal-subtitulo {
+	color: var(--cor-cinza-enfase);
+	font-size: 1.03em;
+	margin-bottom: 1em;
 }
 
-#home ul {
+.section_principal-lista {
 	list-style: none;
 	padding: 0;
 }
 
-#home li {
+.section_principal-lista-item {
 	font-family: var(--font-primaria);
 	font-size: 0.8em;
+	color: var(--cor-preto);
+	margin: 0.5em 4.5em 0.5em 4.3em;
 	padding: 1.2em 1em 0 2em;
+	list-style-type: square;
+}
+
+
+.section_principal-separador {
+	border: none;
+	width: 80%;
+	height: 2px;
+	margin: auto;
+	padding: 0.2em;
+}
+
+.section_principal-cta {
+	font: italic 1em var(--font-secundaria);
+	text-align: center;
+	color: var(--cor-preto);
+	margin: auto;
+	padding: 0.5em;
+}
+
+
+/****************** Footer ******************/
+
+footer {
+	background-color: var(--cor-preto);
+	color: var(--cor-claro);
+	padding: 1em 0;
+}
+
+footer a {
+	color: var(--cor-claro);
+	text-decoration: underline;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+.footer-text {
+	text-align: center;
+	font-family: var(--font-primaria);
+	font-size: 0.8em;
+	color: var(--cor-claro);
+	margin: 0.5em 0;
+	padding: 1em;
 }
 
 /* Efeito Parallax */
