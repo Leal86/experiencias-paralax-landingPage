@@ -15,7 +15,10 @@
 	--cor-laranja-warning: #FDBA74;
 	--cor-verde-enfase: #86EFAC;
 	--cor-grad-fundo: from-white to-blue-50;
-	--cor-grad-fundo-dia: radial-gradient(circle at 70% 25%, #E0F2FE 0%, #aee7ff 100%, #FFFFFF 80%);
+	--cor-grad-fundo-dia: radial-gradient(circle at 80% 15%, #E0F2FE 0%, #38BDF8 100%, #FFFFFF 100%);
+
+	--cor-grad-fundo-new: linear-gradient(to bottom, var(--cor-claro) 0%, var(--cor-verde-enfase) 70%, var(--cor-azul-claro) 20%);
+
 	--cor-grad-fundo-entardecer: linear-gradient(360deg, #856179 0%, #DC707E 30%, #F7B098 70%, #9ACDC5 100%);
 	--cor-preto: #111827;
 	--cor-transparente: #ffffff00;
@@ -24,16 +27,25 @@
 
 	/* Variáveis do botão de menu */
 
-	--hamburger-btn-padding: 8px; /* Padding do botão de menu */
-	--hamburger-btn-size: 32px; /* Tamanho do botão de menu */
-	--hamburger-btn-gap: 4px; /* Espaçamento das linhas do botão de menu */
+	--hamburger-btn-padding: 8px;
+	/* Padding do botão de menu */
+	--hamburger-btn-size: 32px;
+	/* Tamanho do botão de menu */
+	--hamburger-btn-gap: 4px;
+	/* Espaçamento das linhas do botão de menu */
 
 
 	/* Fontes */
 
-	--font-titulos: 'Playfair Display', serif; /* Uso: Títulos principais, frases de destaque, hero section. */
-	--font-primaria: 'Inter', sans-serif; /* Uso: Parágrafos, textos de apoio, descrições. */
-	--font-secundaria: 'Open Sans', sans-serif; /* Uso: Textos secundários, legendas, informações adicionais. */
+	--font-titulos: 'Playfair Display',
+		serif;
+	/* Uso: Títulos principais, frases de destaque, hero section. */
+	--font-primaria: 'Inter',
+		sans-serif;
+	/* Uso: Parágrafos, textos de apoio, descrições. */
+	--font-secundaria: 'Open Sans',
+		sans-serif;
+	/* Uso: Textos secundários, legendas, informações adicionais. */
 }
 
 /* Reset básico */
@@ -50,7 +62,7 @@ body,
 html {
 	margin: 0;
 	min-height: 100vh;
-	background: var(--cor-grad-fundo-dia);
+	background: var(--cor-grad-fundo-new);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -118,7 +130,7 @@ header {
 .button {
 	border-radius: 4px;
 	border: none;
-	background-color: var(--cor-grad-fundo);
+	background-color: var(--cor-cinza-escuro-descricoes);
 	transition: filter 300ms ease-out;
 	cursor: pointer;
 }
@@ -162,7 +174,7 @@ header {
 nav {
 	width: 100vw;
 	min-height: 100dvh;
-	background: var(--cor-grad-fundo-entardecer);
+	background: var(--cor-grad-fundo-dia);
 	position: absolute;
 	top: 0;
 	left: 100vw;
@@ -203,6 +215,14 @@ nav a:hover {
 
 #home p {
 	margin-bottom: 20px;
+}
+
+.section_principal-linha {
+	border: none;
+	width: 80%;
+	height: 2px;
+	margin: auto;
+	padding: 1em;
 }
 
 #home ul {
