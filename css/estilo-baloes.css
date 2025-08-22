@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url(estilo.css);
+:root {
+	/* Cores do tema */
+
+	--cor-claro: #FFFFFF;
+	--cor-cinza: #E0F2FE;
+	--cor-cinza-enfase: #575a5e;
+	--cor-cinza-escuro-descricoes: #6B7280;
+	--cor-azul-claro: #38BDF8;
+	--cor-laranja-warning: #FDBA74;
+	--cor-verde-enfase: #86EFAC;
+	--cor-grad-fundo: from-white to-blue-50;
+	--cor-grad-fundo-dia: radial-gradient(circle at 80% 15%, #E0F2FE 0%, #38BDF8 100%, #FFFFFF 100%);
+
+	--cor-grad-fundo-new: linear-gradient(29deg, #87CEEB 0%, /* Azul céu claro */
+			#A8D5BA 40%, /* Verde claro natureza */
+			#FFD59E 70%, /* Laranja suave do pôr do sol */
+			#FFB6B9 100% /* Rosa pastel do entardecer */
+		);
+	--cor-grad-fundo-img:linear-gradient(135deg, rgba(135,206,235,0.6), rgba(168,213,186,0.6), rgba(255,213,158,0.6), rgba(255,182,185,0.6)),
+  url('../imagens/img-baloes06.jpg') center/cover no-repeat;
+	--cor-grad-fundo-entardecer: linear-gradient(360deg, #856179 0%, #DC707E 30%, #F7B098 70%, #9ACDC5 100%);
+	--cor-preto: #111827;
+	--cor-transparente: #ffffff00;
+
+
+
+	/* Variáveis do botão de menu */
+
+	--hamburger-btn-padding: 8px;
+	/* Padding do botão de menu */
+	--hamburger-btn-size: 32px;
+	/* Tamanho do botão de menu */
+	--hamburger-btn-gap: 4px;
+	/* Espaçamento das linhas do botão de menu */
+
+
+	/* Fontes */
+
+	--font-titulos: 'Playfair Display',
+		serif;
+	/* Uso: Títulos principais, frases de destaque, hero section. */
+	--font-primaria: 'Inter',
+		sans-serif;
+	/* Uso: Parágrafos, textos de apoio, descrições. */
+	--font-secundaria: 'Open Sans',
+		sans-serif;
+	/* Uso: Textos secundários, legendas, informações adicionais. */
+}
+
+/* Reset básico */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/************** Section Balões **************/
+
+.baloes-parallax {
+	min-height: 400px; /* altura desejada */
+  background-image: url('../imagens/img-baloes06.jpg'); /* sua imagem */
+  background-attachment: fixed; /* efeito parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.baloes-parallax {
+	background-image: url(../imagens/img-baloes04.jpg);
+}
+
+
+/* Formatação de conteúdo */
+
+.parallax-camada {
+  position: relative;
+  min-height: 400px;
+  background-image: url('../imagens/img-baloes06.jpg');
+  background-attachment: fixed; /* Parallax simples */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-conteudo {
+  position: relative;
+  z-index: 2;
+  background: rgba(255,255,255,0.7); /* fundo branco translúcido */
+  padding: 2em 3em;
+  border-radius: 12px;
+  text-align: center;
+}

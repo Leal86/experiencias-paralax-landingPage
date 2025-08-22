@@ -27,3 +27,17 @@ document.querySelectorAll('nav a').forEach(link => {
     btnClose.classList.remove('active');
   });
 });
+
+
+// window.addEventListener('scroll', function() {
+//   const scrolled = window.pageYOffset;
+//   document.querySelector('.baloes-parallax').style.backgroundPositionY = -(scrolled * 0.5) + 'px';
+// });
+
+window.addEventListener('scroll', function() {
+  const scrolled = window.pageYOffset;
+  const parallax = document.querySelector('.parallax-camada');
+  if (parallax) {
+    parallax.style.backgroundPositionY = -(scrolled * 0.4) + 'px';
+  }
+});
