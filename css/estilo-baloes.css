@@ -59,43 +59,5 @@
 
 /************** Section Balões **************/
 
-.baloes-parallax {
-	min-height: 400px; /* altura desejada */
-  background-image: url('../imagens/img-baloes06.jpg'); /* sua imagem */
-  background-attachment: fixed; /* efeito parallax */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.baloes-parallax {
-	background-image: url(../imagens/img-baloes04.jpg);
-}
 
 
-/* Formatação de conteúdo */
-
-.parallax-camada {
-  position: relative;
-  min-height: 400px;
-  background-image: url('../imagens/img-baloes06.jpg');
-  background-attachment: fixed; /* Parallax simples */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.parallax-conteudo {
-  position: relative;
-  z-index: 2;
-  background: rgba(255,255,255,0.7); /* fundo branco translúcido */
-  padding: 2em 3em;
-  border-radius: 12px;
-  text-align: center;
-}

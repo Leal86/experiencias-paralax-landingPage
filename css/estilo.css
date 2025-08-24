@@ -8,7 +8,7 @@
 	/* Cores do tema */
 
 	--cor-claro: #FFFFFF;
-	--cor-cinza: #E0F2FE;
+	--cor-cinza: #8b8b8b;
 	--cor-cinza-enfase: #575a5e;
 	--cor-cinza-escuro-descricoes: #6B7280;
 	--cor-azul-claro: #38BDF8;
@@ -116,11 +116,10 @@ h2 {
 
 header {
 	display: flex;
-	height: 12vh;
+	height: 14vh;
 	justify-content: space-between;
 	padding: 16px;
-	background: var(--cor-laranja-warning) url(../imagens/img-baloes05.jpg) no-repeat center center / cover;
-	color: var(--cor-claro);
+	background: var(--cor-laranja-warning) url(../imagens/img-header/img-cabecalho-small.png) no-repeat center center / cover;
 	align-items: center;
 }
 
@@ -177,6 +176,8 @@ header {
 	transform: rotate(-45deg);
 }
 
+
+
 nav {
 	width: 100vw;
 	min-height: 100dvh;
@@ -197,6 +198,7 @@ nav.active {
 	flex-direction: column;
 	list-style: none;
 	gap: 10px;
+	margin-top: 20px;
 }
 
 .menu-lista-item {
@@ -228,10 +230,11 @@ nav a:hover {
 
 .section_principal-titulo {
 	color: var(--cor-preto);
+	text-shadow: 1px 1px 2px var(--cor-cinza-enfase);
 }
 
 .section_principal-subtitulo {
-	color: var(--cor-cinza-enfase);
+	color: var(--cor-cinza);
 	font-size: 1.03em;
 	margin-bottom: 1em;
 }
