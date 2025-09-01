@@ -64,5 +64,26 @@
 	box-sizing: border-box;
 }
 
-/************** Section Balões **************/
+/************** SECTION BALOES-INTRODUCAO **************/
+
+
+
+/************** SECTION BALOES-IMG **************/
+
+.baloes-img > figure > img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1em;
+}
+figcaption {
+	font-size: 0.875em;
+	color: var(--cor-cinza);
+	text-align: center;
+	margin: 0 0 1.5em 0;
+}
+
+
+
+/************** SECTION BALOES-CONTEUDO **************/
+
 

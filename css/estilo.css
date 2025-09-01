@@ -238,14 +238,11 @@ nav a:hover {
 	margin: 0 2em;
 }
 
-/****************** SECTION PARALLAX ******************/
+/****************** SECTION IMAGEM ******************/
 
-.parallax {
-	background: var(--cor-claro) url(../imagens/img-home.jpg) no-repeat center center / cover;
+.imagem > img {
 	width: 100%;
-	min-height: 45vh;
-	position: absolute;
-	background-attachment: scroll;
+	margin-bottom: 1em;
 
 }
 
