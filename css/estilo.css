@@ -101,11 +101,8 @@ h1 {
 	text-transform: uppercase;
 }
 
-h2,
-h3 {
-	font-family: var(--font-subtitulo);
-	font-size: 1.2em;
-	text-align: center;
+h2, h3, h4 {
+	font-family: var(--font-subtitulo);	
 }
 
 p {
@@ -119,6 +116,7 @@ p {
 
 strong {
 	color: var(--cor-laranja-warning);
+	font-weight: 300;
 }
 
 /****************** HEADER ******************/
@@ -235,6 +233,7 @@ nav a:hover {
 .introducao-subtitulo {
 	color: var(--cor-cinza);
 	font-size: 1.03em;
+	text-align: center;
 	margin: 0 2em;
 }
 
@@ -251,7 +250,7 @@ nav a:hover {
 .conteudo-subtitulo {
 	font-family: var(--font-subtitulo);
 	font-size: 1.2em;
-	margin: 0 2em;
+	margin: 1em 2em;
 	text-align: center;
 }
 
@@ -264,10 +263,11 @@ nav a:hover {
 
 .conteudo-lista-item {
 	font-family: var(--font-secundaria);
-	font-size: 0.8em;
+	font-size: 1em;
+	font-weight: 300;
 	color: var(--cor-preto);
-	margin: 0.5em 3.5em 0 3.5em;
-	padding: 1em 2em;
+	margin: 0 0.8em 0 0.8em;
+	padding: 0.5em 2em;
 	list-style-type: square;
 }
 
@@ -286,15 +286,10 @@ nav a:hover {
 .cta-texto {
 	font: italic 1em var(--font-secundaria);
 	font-size: 1.2em;
-	color: var(--cor-cinza);
+	font-weight: 400;
 	text-align: center;
 	margin: auto;
-	padding: 0.8em;
-}
-
-.cta-texto>strong {
-	color: var(--cor-cinza-enfase) !important;
-	padding: 0em !important;
+	padding: 0.5em;
 }
 
 

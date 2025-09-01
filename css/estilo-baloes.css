@@ -64,6 +64,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	background: var(--cor-fundo);
+}
+
 /************** SECTION BALOES-INTRODUCAO **************/
 
 
@@ -77,9 +81,9 @@
 }
 figcaption {
 	font-size: 0.875em;
-	color: var(--cor-cinza);
+	color: var(--cor-cinza-enfase);
 	text-align: center;
-	margin: 0 0 1.5em 0;
+	margin: -1em 0 2em 0;
 }
 
 
