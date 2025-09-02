@@ -69,7 +69,13 @@ body {
 }
 
 /************** SECTION BALOES-INTRODUCAO **************/
+.baloes-introducao-titulo {
+	
+}
 
+.baloes-introducao-subtitulo {
+	text-align: center;
+}
 
 
 /************** SECTION BALOES-IMG **************/
@@ -90,4 +96,101 @@ figcaption {
 
 /************** SECTION BALOES-CONTEUDO **************/
 
+.baloes-conteudo-subtitulo {
+	font-size: 1.4em;
+	color: var(--cor-cinza-enfase);
+	text-align: center;
+}
 
+
+/************** SECTION BALOES-COMO_FUNCIONA **************/
+
+.baloes-como_funciona {
+	background-color: #0000000e;
+	border-radius: 15px;
+	margin: 2em;
+	padding-bottom: 0.5em;
+}
+
+.baloes-como_funciona-subtitulo {
+	font-size: 1.4em;
+	color: var(--cor-cinza-enfase);
+	text-align: center;
+	padding: 1em 0;
+	margin: 0;
+}
+
+.baloes-como_funciona-lista {
+	list-style: none;
+	text-align: justify;
+	padding: 0 1.5em;
+}
+
+.baloes-como_funciona-lista-item {
+	font-size: 1em;
+	font-family: var(--font-primaria);
+	font-weight: 300;
+	margin-bottom: 1em;
+	letter-spacing: 0.01em;
+	line-height: 1.5em;
+}
+
+.baloes-como_funciona-lista-item-destaque {
+	font-size: 1.1em;
+	font-weight: 500;
+	font-family: var(--font-subtitulo);
+	
+}
+
+/*************** SECTION BALOES-FACTORES_ESPECIAIS ***************/
+
+.baloes-fatores_especiais-subtitulo {
+	font-size: 1.1em;
+	color: var(--cor-cinza-enfase);
+	text-align: center;
+	padding: 0.5em 0;
+	margin: 0;
+}
+
+.baloes-fatores_especiais-enfase {
+	font-size: 1.1em;
+	font-weight: 500;
+	font-family: var(--font-subtitulo);
+	letter-spacing: 0.01em;
+	padding: 0.5em 0 0.1em 0;
+	color: var(--cor-laranja-warning);
+}
+
+.baloes-fatores_especiais-descricao {
+	font-size: 1em;
+	font-family: var(--font-primaria);
+	font-weight: 300;
+	margin: 0 2.5em 1em 2.5em;
+	padding: 0;
+	letter-spacing: 0.01em;
+}
+
+/*************** SECTION BALOES-SEGURANCA ***************/
+
+.baloes-seguranca {
+	background-color: #2900df57;
+	border-radius: 10px;
+	margin: 0 1em;
+}
+
+.baloes-seguranca-subtitulo {
+	font-size: 1.1em;
+	color: var(--cor-claro);
+	text-align: center;
+	padding: 1.5em 0 0.3em 0;
+	margin: 0;
+}
+
+.baloes-seguranca-descricao {
+	font-family: var(--font-primaria);
+	font-weight: 300;
+	margin: 0.5em 2em 1.5em 2em;
+	padding: 0.5em 1.5em 1.5em 1.5em;
+	letter-spacing: 0.01em;
+	color: var(--cor-fundo);
+}

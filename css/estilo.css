@@ -95,14 +95,19 @@ body.no-scroll {
 
 h1 {
 	font-family: var(--font-titulos);
-	font-size: 1.6em;
-	margin: 0.5em 1.2em;
+	font-size: 1.36em;
+	font-weight: 400;
+	color: var(--cor-cinza-enfase);
+	margin: 0.5em 1.3em;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 h2, h3, h4 {
-	font-family: var(--font-subtitulo);	
+	font-family: var(--font-subtitulo);
+	font-size: 1em;
+	color: var(--cor-cinza);
+	margin: 0 2.3em;
 }
 
 p {
@@ -227,14 +232,12 @@ nav a:hover {
 /****************** SECTION INTRODUÇÃO ******************/
 
 .introducao-titulo {
-	color: var(--cor-cinza-enfase);
+	margin-top: 1em;
 }
 
 .introducao-subtitulo {
-	color: var(--cor-cinza);
-	font-size: 1.03em;
+	font-size: 1em;
 	text-align: center;
-	margin: 0 2em;
 }
 
 /****************** SECTION IMAGEM ******************/
