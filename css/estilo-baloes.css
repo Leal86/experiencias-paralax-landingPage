@@ -75,8 +75,19 @@ body {
 
 .baloes-introducao-subtitulo {
 	text-align: center;
+	padding-bottom: 0.5em;
 }
 
+.baloes-introducao-descricao {
+	font-size: 1em;
+	font-family: var(--font-primaria);
+	font-weight: 300;
+	color: var(--cor-cinza-enfase);
+	margin: 0.5em 2.5em 1.5em 2.5em;
+	padding: 0;
+	letter-spacing: 0.01em;
+	line-height: 1.5em;
+}
 
 /************** SECTION BALOES-IMG **************/
 
@@ -89,7 +100,7 @@ figcaption {
 	font-size: 0.875em;
 	color: var(--cor-cinza-enfase);
 	text-align: center;
-	margin: -1em 0 2em 0;
+	margin: -1em 0 1em 0;
 }
 
 
@@ -100,8 +111,19 @@ figcaption {
 	font-size: 1.4em;
 	color: var(--cor-cinza-enfase);
 	text-align: center;
+	padding-bottom: 0.5em;
 }
 
+.baloes-conteudo-descricao {
+	font-size: 1em;
+	font-family: var(--font-primaria);
+	font-weight: 300;
+	color: var(--cor-cinza-enfase);
+	margin: 0.5em 2.5em 1.5em 2.5em;
+	padding: 0;
+	letter-spacing: 0.01em;
+	line-height: 1.5em;
+}
 
 /************** SECTION BALOES-COMO_FUNCIONA **************/
 
@@ -133,6 +155,7 @@ figcaption {
 	margin-bottom: 1em;
 	letter-spacing: 0.01em;
 	line-height: 1.5em;
+	color: var(--cor-cinza-enfase);
 }
 
 .baloes-como_funciona-lista-item-destaque {
@@ -165,6 +188,7 @@ figcaption {
 	font-size: 1em;
 	font-family: var(--font-primaria);
 	font-weight: 300;
+	color: var(--cor-cinza-enfase);
 	margin: 0 2.5em 1em 2.5em;
 	padding: 0;
 	letter-spacing: 0.01em;
@@ -173,9 +197,10 @@ figcaption {
 /*************** SECTION BALOES-SEGURANCA ***************/
 
 .baloes-seguranca {
-	background-color: #2900df57;
+	background-color: #3308f56b;
 	border-radius: 10px;
-	margin: 0 1em;
+	margin: 1em 1em;
+	padding-bottom: 1em;
 }
 
 .baloes-seguranca-subtitulo {
@@ -187,10 +212,145 @@ figcaption {
 }
 
 .baloes-seguranca-descricao {
+	font-size: 1em;
 	font-family: var(--font-primaria);
 	font-weight: 300;
-	margin: 0.5em 2em 1.5em 2em;
-	padding: 0.5em 1.5em 1.5em 1.5em;
-	letter-spacing: 0.01em;
 	color: var(--cor-fundo);
+	margin: 0.5em 2em 0 2em;
+	padding: 0;
+	letter-spacing: 0.01em;
+	line-height: 1.5em;
+}
+
+/*************** SECTION BALOES-LUGARES ***************/
+
+.baloes-lugares {
+	background-color: #0000000e;
+	border-radius: 15px;
+	margin: 2em 1em 2em 1em;
+	padding-bottom: 0.5em;
+}
+.baloes-lugares-subtitulo {
+	font-size: 1.2em;
+	color: var(--cor-cinza-enfase);
+	text-align: center;
+	padding: 1em 0;
+	margin: 0;
+}
+
+.baloes-lugares-pais {
+	font-size: 1.1em;
+	font-weight: 600;
+	font-family: var(--font-subtitulo);
+	letter-spacing: 0.01em;
+	color: var(--cor-laranja-warning);
+	margin: 1em 1.8em 0.2em 1.8em;
+}
+
+.baloes-lugares-descricao {
+	font-size: 1em;
+	font-family: var(--font-primaria);
+	font-weight: 300;
+	color: var(--cor-cinza-enfase);
+	margin: 0.5em 2em 1.5em 2em;
+	padding: 0;
+	letter-spacing: 0.01em;
+	line-height: 1.5em;
+}
+
+/*************** SECTION BALOES-CURIOSIDADES ***************/
+
+.baloes-curiosidades {
+	background-color: #5b5c5b4d;
+	padding-bottom: 1em;
+}
+
+.baloes-curiosidades-subtitulo {
+	font-size: 1.2em;
+	color: var(--cor-cinza-enfase);
+	text-align: center;
+	padding: 1.5em 0 1em 0;
+	margin: 0;
+}
+
+.baloes-curiosidades-lista {
+	list-style: none;
+	padding: 0 1.5em;
+}
+
+.baloes-curiosidades-lista-item {
+	font-size: 1em;
+	font-family: var(--font-primaria);
+	font-weight: 300;
+	text-align: justify;
+	margin-bottom: 1em;
+	letter-spacing: 0.01em;
+	line-height: 1.5em;
+	color: var(--cor-cinza-enfase);
+}
+
+.baloes-curiosidades-lista-item-destaque {
+	font-size: 1.1em;
+	font-weight: 600;
+	font-family: var(--font-subtitulo);
+}
+
+/*************** SECTION BALOES-DICAS ***************/
+
+.baloes-dicas {
+}
+
+.baloes-dicas-subtitulo {
+	font-size: 1.2em;
+	color: var(--cor-cinza-enfase);
+	text-align: center;
+	padding: 1.3em 0;
+	margin: 0;
+}
+
+.baloes-dicas-item {
+	font-size: 1.1em;
+	font-weight: 500;
+	font-family: var(--font-subtitulo);
+	letter-spacing: 0.01em;
+	margin: 0.5em 0.5em 0.5em 1.8em;
+	padding: 0;
+	color: var(--cor-roxo-enfase);
+}
+
+.baloes-dicas-descricao {
+	font-size: 1em;
+	font-family: var(--font-primaria);
+	font-weight: 300;
+	color: var(--cor-cinza-enfase);
+	margin: 0 2em 1em 2em;
+	padding: 0;
+	letter-spacing: 0.01em;
+	line-height: 1.5em;
+}
+
+/*************** SECTION BALOES-CONCLUSAO ***************/
+
+.baloes-conclusao {
+	margin: 1em 1em 2em 1em;
+	padding-bottom: 1em;
+}
+
+.baloes-conclusao-subtitulo {
+	font-size: 1.2em;
+	color: var(--cor-cinza-enfase);
+	text-align: center;
+	padding: 0.5em 0 ;
+	margin: 0;
+}
+
+.baloes-conclusao-descricao {
+	font-size: 1em;
+	font-family: var(--font-primaria);
+	font-weight: 300;
+	color: var(--cor-cinza-enfase);
+	margin: 0.5em 2em 1em 2em;
+	padding: 0;
+	letter-spacing: 0.01em;
+	line-height: 1.5em;
 }
