@@ -146,6 +146,11 @@ p {
 	font-weight: 300;
 }
 
+.enfase-escuro {
+	color: var(--cor-preto);
+	font-weight: 400;
+}
+
 .baloes-img > figure > img {
 	width: 100%;
 	height: auto;
@@ -315,6 +320,7 @@ nav a:hover {
 	font: italic 1em var(--font-secundaria);
 	font-size: 1.2em;
 	font-weight: 400;
+	color: var(--cor-preto);
 	text-align: center;
 	margin: auto;
 	padding: 0.5em;
