@@ -69,6 +69,14 @@
 	box-sizing: border-box;
 }
 
+/* Reset básico */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 /************** Estilos Gerais **************/
 
 body,
@@ -94,35 +102,60 @@ body.no-scroll {
 	padding: 50px 80px;
 } */
 
-h1 {
+.titulo {
 	font-family: var(--font-titulos);
 	font-size: 1.36em;
 	font-weight: 400;
 	color: var(--cor-cinza-enfase);
 	margin: 0.5em 1.3em;
+	padding: 0.2em;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-h2, h3, h4 {
+.subtitulo {
+	font-family: var(--font-subtitulo);
+	font-size: 1em;
+	font-weight: 300;
+	color: var(--cor-cinza);
+	text-align: center;
+	margin: 0 1.2em;
+	padding-bottom: 0.5em;	
+}
+
+h2,h3, h4 {
 	font-family: var(--font-subtitulo);
 	font-size: 1em;
 	color: var(--cor-cinza);
-	margin: 0 2.3em;
 }
 
 p {
 	font-family: var(--font-primaria);
-	font-size: 0.93em;
+	font-size: 1em;
+	font-weight: 300;
+	color: var(--cor-cinza-enfase);
 	text-align: justify;
 	letter-spacing: 0.01em;
 	line-height: 1.7;
-	margin: 1.5em 2.5em;
+	margin: 0.5em 1.8em 1.5em 1.8em;
+	padding: 0;
 }
 
-strong {
+.enfase {
 	color: var(--cor-laranja-warning);
 	font-weight: 300;
+}
+
+.baloes-img > figure > img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1em;
+}
+figcaption {
+	font-size: 0.875em;
+	color: var(--cor-cinza-enfase);
+	text-align: center;
+	margin: -1em 0 1em 0;
 }
 
 /****************** HEADER ******************/
@@ -232,14 +265,7 @@ nav a:hover {
 
 /****************** SECTION INTRODUÇÃO ******************/
 
-.introducao-titulo {
-	margin-top: 1em;
-}
 
-.introducao-subtitulo {
-	font-size: 1em;
-	text-align: center;
-}
 
 /****************** SECTION IMAGEM ******************/
 
@@ -252,10 +278,8 @@ nav a:hover {
 /****************** SECTION CONTEÚDO ******************/
 
 .conteudo-subtitulo {
-	font-family: var(--font-subtitulo);
 	font-size: 1.2em;
 	margin: 1em 2em;
-	text-align: center;
 }
 
 .conteudo-lista {
@@ -270,8 +294,8 @@ nav a:hover {
 	font-size: 1em;
 	font-weight: 300;
 	color: var(--cor-preto);
-	margin: 0 0.8em 0 0.8em;
-	padding: 0.5em 2em;
+	margin: 0 0em 0 0em;
+	padding: 0.8em 1.8em;
 	list-style-type: square;
 }
 

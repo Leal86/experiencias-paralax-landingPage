@@ -69,49 +69,21 @@ body {
 }
 
 /************** SECTION BALOES-INTRODUCAO **************/
-.baloes-introducao-titulo {
-	
-}
 
 .baloes-introducao-subtitulo {
 	text-align: center;
 	padding-bottom: 0.5em;
 }
 
-.baloes-introducao-descricao {
-	font-size: 1em;
-	font-family: var(--font-primaria);
-	font-weight: 300;
-	color: var(--cor-cinza-enfase);
-	margin: 0.5em 2.5em 1.5em 2.5em;
-	padding: 0;
-	letter-spacing: 0.01em;
-	line-height: 1.5em;
-}
 
 /************** SECTION BALOES-IMG **************/
-
-.baloes-img > figure > img {
-	width: 100%;
-	height: auto;
-	margin-bottom: 1em;
-}
-figcaption {
-	font-size: 0.875em;
-	color: var(--cor-cinza-enfase);
-	text-align: center;
-	margin: -1em 0 1em 0;
-}
-
 
 
 /************** SECTION BALOES-CONTEUDO **************/
 
 .baloes-conteudo-subtitulo {
-	font-size: 1.4em;
-	color: var(--cor-cinza-enfase);
-	text-align: center;
-	padding-bottom: 0.5em;
+	font-size: 1.2em;
+	margin: 0.5em 1.5em;
 }
 
 .baloes-conteudo-descricao {
@@ -130,7 +102,7 @@ figcaption {
 .baloes-como_funciona {
 	background-color: #0000000e;
 	border-radius: 15px;
-	margin: 2em;
+	margin: 1.5em;
 	padding-bottom: 0.5em;
 }
 
@@ -171,27 +143,17 @@ figcaption {
 	font-size: 1.1em;
 	color: var(--cor-cinza-enfase);
 	text-align: center;
-	padding: 0.5em 0;
+	padding: 0.5em 0 1.5em 0;
 	margin: 0;
 }
 
 .baloes-fatores_especiais-enfase {
 	font-size: 1.1em;
 	font-weight: 500;
-	font-family: var(--font-subtitulo);
 	letter-spacing: 0.01em;
-	padding: 0.5em 0 0.1em 0;
-	color: var(--cor-laranja-warning);
-}
-
-.baloes-fatores_especiais-descricao {
-	font-size: 1em;
-	font-family: var(--font-primaria);
-	font-weight: 300;
-	color: var(--cor-cinza-enfase);
-	margin: 0 2.5em 1em 2.5em;
+	margin: 0 0 0 1.6em;
 	padding: 0;
-	letter-spacing: 0.01em;
+	color: var(--cor-laranja-warning);
 }
 
 /*************** SECTION BALOES-SEGURANCA ***************/
@@ -216,7 +178,7 @@ figcaption {
 	font-family: var(--font-primaria);
 	font-weight: 300;
 	color: var(--cor-fundo);
-	margin: 0.5em 2em 0 2em;
+	margin: 0.5em 1.5em 0 1.5em;
 	padding: 0;
 	letter-spacing: 0.01em;
 	line-height: 1.5em;
@@ -244,18 +206,7 @@ figcaption {
 	font-family: var(--font-subtitulo);
 	letter-spacing: 0.01em;
 	color: var(--cor-laranja-warning);
-	margin: 1em 1.8em 0.2em 1.8em;
-}
-
-.baloes-lugares-descricao {
-	font-size: 1em;
-	font-family: var(--font-primaria);
-	font-weight: 300;
-	color: var(--cor-cinza-enfase);
-	margin: 0.5em 2em 1.5em 2em;
-	padding: 0;
-	letter-spacing: 0.01em;
-	line-height: 1.5em;
+	margin: 1em 0 0.2em 1.6em;
 }
 
 /*************** SECTION BALOES-CURIOSIDADES ***************/
@@ -313,28 +264,12 @@ figcaption {
 	font-weight: 500;
 	font-family: var(--font-subtitulo);
 	letter-spacing: 0.01em;
-	margin: 0.5em 0.5em 0.5em 1.8em;
+	margin: 0.5em 0.5em 0.5em 1.5em;
 	padding: 0;
 	color: var(--cor-roxo-enfase);
 }
 
-.baloes-dicas-descricao {
-	font-size: 1em;
-	font-family: var(--font-primaria);
-	font-weight: 300;
-	color: var(--cor-cinza-enfase);
-	margin: 0 2em 1em 2em;
-	padding: 0;
-	letter-spacing: 0.01em;
-	line-height: 1.5em;
-}
-
 /*************** SECTION BALOES-CONCLUSAO ***************/
-
-.baloes-conclusao {
-	margin: 1em 1em 2em 1em;
-	padding-bottom: 1em;
-}
 
 .baloes-conclusao-subtitulo {
 	font-size: 1.2em;
