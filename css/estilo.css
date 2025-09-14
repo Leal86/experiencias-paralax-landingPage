@@ -235,6 +235,30 @@ nav.active {
 	left: 0;
 }
 
+.menu {
+    position: fixed; /* Use fixed para não ocupar espaço do body */
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: -2px 0 16px #0003;
+    transform: translateX(100%);
+    transition: transform 0.3s, opacity 0.3s;
+    z-index: 10;
+    padding: 32px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu.active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .menu-lista {
 	display: flex;
 	flex-direction: column;

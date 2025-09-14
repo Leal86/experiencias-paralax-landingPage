@@ -2,6 +2,15 @@ const btnOpen = document.querySelector('header > .btn-hamburger');
 const btnClose = document.querySelector('.close-button .btn-hamburger');
 const nav = document.querySelector('nav');
 
+const btnHamburger = document.querySelector('.btn-hamburger');
+const menu = document.querySelector('.menu');
+const body = document.body;
+
+btnHamburger.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  body.classList.toggle('no-scroll');
+});
+
 // Abrir menu
 btnOpen.addEventListener('click', () => {
   nav.classList.add('active');
@@ -41,3 +50,4 @@ document.querySelectorAll('nav a').forEach(link => {
     parallax.style.backgroundPositionY = -(scrolled * 0.4) + 'px';
   }
 }); */
+
