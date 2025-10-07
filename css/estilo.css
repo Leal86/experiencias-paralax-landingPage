@@ -115,7 +115,7 @@ body.no-scroll {
 
 .subtitulo {
 	font-family: var(--font-subtitulo);
-	font-size: 1em;
+	font-size: 1.2em;
 	font-weight: 300;
 	color: var(--cor-cinza);
 	text-align: center;
@@ -123,9 +123,8 @@ body.no-scroll {
 	padding-bottom: 0.5em;	
 }
 
-h2,h3, h4 {
+h3, h4, h5, h6 {
 	font-family: var(--font-subtitulo);
-	font-size: 1em;
 	color: var(--cor-cinza);
 }
 
@@ -143,19 +142,28 @@ p {
 
 .enfase {
 	color: var(--cor-laranja-warning);
-	font-weight: 300;
+	font-weight: 400;
+	font-size: 1.02em;
 }
 
 .enfase-escuro {
 	color: var(--cor-preto);
-	font-weight: 400;
+	font-family: var(--font-titulos);
+	font-size: 1.1em;
+	margin: 0.8em 1.8em !important;
 }
 
-.imagem > figure > img {
+section.imagem > img {
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+section.imagem > figure > img {
 	width: 100%;
 	height: auto;
 	margin-bottom: 1em;
 }
+
 figcaption {
 	font-size: 0.875em;
 	color: var(--cor-cinza-enfase);
@@ -294,21 +302,12 @@ nav a:hover {
 
 /****************** SECTION INTRODUÇÃO ******************/
 
-
-
-/****************** SECTION IMAGEM ******************/
-
-.imagem > img {
-	width: 100%;
-	margin-bottom: 1em;
-
-}
-
 /****************** SECTION CONTEÚDO ******************/
 
 .conteudo-subtitulo {
 	font-size: 1.2em;
-	margin: 1em 2em;
+	margin: 1em 1.5em;
+	font-family: var(--font-titulos);
 }
 
 .conteudo-lista {
@@ -323,8 +322,8 @@ nav a:hover {
 	font-size: 1em;
 	font-weight: 300;
 	color: var(--cor-preto);
-	margin: 0 0em 0 0em;
-	padding: 0.8em 1.8em;
+	margin: 0;
+	padding: 0.8em 2.5em;
 	list-style-type: square;
 }
 

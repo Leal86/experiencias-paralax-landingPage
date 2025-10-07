@@ -65,7 +65,8 @@
 }
 
 .estrada-dicas-subtitulo {
-    font-size: 1.5em;
+	font-family: var(--font-subtitulo);
+    font-size: 1.3em;
     font-weight: 500;
     text-align: center;
     color: var(--cor-claro);
@@ -82,13 +83,18 @@
 
 .estrada-dicas-lista-item {
 	font-family: var(--font-secundaria);
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: 300;
 	color: var(--cor-claro);
 	margin: 0 0em 0 0em;
 	padding: 0.8em 1.8em;
-	
 }
+
+.estrada-dicas-lista-item strong {
+	color: var(--cor-laranja-warning);
+	font-weight: 600;
+}
+
 .estrada-dicas-lista-item::before {
     content: "• ";
     color: var(--cor-laranja-warning);
@@ -96,9 +102,13 @@
 }
 
 /********** SECTION ESTRADA-DESTINOS **********/
+.estrada-destinos {
+	padding: 1.1em !important;
+}
 
 .estrada-subtitulo {
-    font-size: 1.5em;
+	font-family: var(--font-subtitulo);
+    font-size: 1.3em;
     font-weight: 500;
     text-align: center;
     color: var(--cor-cinza-enfase);
@@ -120,10 +130,15 @@
 .estrada-destinos-lista-item {
     font-family: var(--font-primaria);
     font-size: 1.1em;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--cor-preto);
-    margin: 0.5em 0;
+    margin: 0.5em 0.5em;
     padding: 0.5em 0;
+}
+
+.estrada-destinos-lista-item strong {
+	color: var(--cor-laranja-warning);
+	font-weight: 600;
 }
 
 /********** SECTION ESTRADA-CONCLUSAO **********/

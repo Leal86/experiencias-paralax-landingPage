@@ -81,26 +81,13 @@ body {
 
 /************** SECTION BALOES-CONTEUDO **************/
 
-.baloes-conteudo-subtitulo {
-	font-size: 1.2em;
-	margin: 0.5em 1.5em;
-}
 
-.baloes-conteudo-descricao {
-	font-size: 1em;
-	font-family: var(--font-primaria);
-	font-weight: 300;
-	color: var(--cor-cinza-enfase);
-	margin: 0.5em 2.5em 1.5em 2.5em;
-	padding: 0;
-	letter-spacing: 0.01em;
-	line-height: 1.5em;
-}
 
 /************** SECTION BALOES-COMO_FUNCIONA **************/
 
 .baloes-como_funciona {
 	background-color: #0000000e;
+	font-family: var(--font-primaria);
 	border-radius: 15px;
 	margin: 1.5em;
 	padding-bottom: 0.5em;
@@ -140,6 +127,7 @@ body {
 /*************** SECTION BALOES-FACTORES_ESPECIAIS ***************/
 
 .baloes-fatores_especiais-subtitulo {
+	font-family: var(--font-primaria);
 	font-size: 1.1em;
 	color: var(--cor-cinza-enfase);
 	text-align: center;
@@ -166,7 +154,8 @@ body {
 }
 
 .baloes-seguranca-subtitulo {
-	font-size: 1.1em;
+	font-family: var(--font-primaria);
+	font-size: 1.2em;
 	color: var(--cor-claro);
 	text-align: center;
 	padding: 1.5em 0 0.3em 0;
@@ -193,6 +182,7 @@ body {
 	padding-bottom: 0.5em;
 }
 .baloes-lugares-subtitulo {
+	font-family: var(--font-primaria);
 	font-size: 1.2em;
 	color: var(--cor-cinza-enfase);
 	text-align: center;
@@ -217,6 +207,7 @@ body {
 }
 
 .baloes-curiosidades-subtitulo {
+	font-family: var(--font-primaria);
 	font-size: 1.2em;
 	color: var(--cor-cinza-enfase);
 	text-align: center;
@@ -241,7 +232,7 @@ body {
 }
 
 .baloes-curiosidades-lista-item-destaque {
-	font-size: 1.1em;
+	font-size: 1.05em;
 	font-weight: 600;
 	font-family: var(--font-subtitulo);
 }
@@ -252,6 +243,7 @@ body {
 }
 
 .baloes-dicas-subtitulo {
+	font-family: var(--font-primaria);
 	font-size: 1.2em;
 	color: var(--cor-cinza-enfase);
 	text-align: center;
@@ -272,6 +264,7 @@ body {
 /*************** SECTION BALOES-CONCLUSAO ***************/
 
 .baloes-conclusao-subtitulo {
+	font-family: var(--font-primaria);
 	font-size: 1.2em;
 	color: var(--cor-cinza-enfase);
 	text-align: center;

@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url(estilo.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+
+	/* Cores do tema */
+
+	--cor-fundo: #e0e0e0;
+	--cor-claro: #FFFFFF;
+	--cor-cinza: #a7a7a7;
+	--cor-cinza-enfase: #686868;
+	--cor-preto: #111827;
+	--cor-transparente: #ffffff00;
+	--cor-azul-claro: #38BDF8;
+	--cor-laranja-warning: #df7300;
+	--cor-roxo-enfase: #911de4;
+	--cor-verde-enfase: #86EFAC;
+	--cor-grad-fundo: from-white to-blue-50;
+	--cor-grad-fundo-dia: radial-gradient(circle at 80% 15%, #E0F2FE 0%, #38BDF8 100%, #FFFFFF 100%);
+	--cor-grad-fundo-new: linear-gradient(29deg, #87CEEB 0%,
+			/* Azul céu claro */
+			#A8D5BA 40%,
+			/* Verde claro natureza */
+			#FFD59E 70%,
+			/* Laranja suave do pôr do sol */
+			#FFB6B9 100%
+			/* Rosa pastel do entardecer */
+		);
+	--cor-grad-fundo-img: linear-gradient(135deg, rgba(135, 206, 235, 0.6), rgba(168, 213, 186, 0.6), rgba(255, 213, 158, 0.6), rgba(255, 182, 185, 0.6)),
+		url('../imagens/img-baloes06.jpg') center/cover no-repeat;
+	--cor-grad-fundo-entardecer: linear-gradient(360deg, #856179 0%, #DC707E 30%, #F7B098 70%, #9ACDC5 100%);
+
+
+	/* Variáveis do botão de menu */
+
+	--hamburger-btn-padding: 8px;
+	/* Padding do botão de menu */
+	--hamburger-btn-size: 32px;
+	/* Tamanho do botão de menu */
+	--hamburger-btn-gap: 4px;
+	/* Espaçamento das linhas do botão de menu */
+
+
+	/* Fontes */
+
+	--font-titulos: 'Oswald', serif;
+	/* Uso: Títulos principais, frases de destaque, hero section. */
+
+	--font-subtitulo: 'Lato', sans-serif;
+	/* Uso: Subtítulos, chamadas para ação. */
+
+	--font-primaria: 'Roboto', sans-serif;
+	/* Uso: Parágrafos, textos de apoio, descrições. */
+
+	--font-secundaria: 'Open Sans', sans-serif;
+	/* Uso: Textos secundários, legendas, informações adicionais. */
+}
+
+/************** SECTION CONTEUDO POR DO SOL **************/
+
+.introducao .subtitulo {
+    font-size: 1.13em;
+	font-family: var(--font-subtitulo);
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 0.5em;
+	letter-spacing: 0.01em;
+	line-height: 1em;
+	color: var(--cor-preto);
+}
+
+.por_do_sol-lista {
+    list-style: none;
+	padding: 0 1.7em;
+    padding: 1em 2em;
+}
+
+.por_do_sol-lista-item {
+    font-size: 1em;
+	font-family: var(--font-primaria);
+	font-weight: 300;
+	text-align: justify;
+	margin-bottom: 1em;
+	letter-spacing: 0.01em;
+	line-height: 1.5em;
+	color: var(--cor-cinza-enfase);
+}
+
+.por_do_sol-lista-item strong {
+    font-weight: 600;
+    color: var(--cor-laranja-warning);
+}
+
+/**************** SECTION DICAS POR DO SOL ****************/
+
+.por_do_sol-dicas {
+    background-color: #0a33e70e;
+    font-family: var(--font-primaria);
+    border-radius: 15px;
+    margin: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+.por_do_sol-dicas h2 {
+    font-size: 1.2em;
+    color: var(--cor-cinza-enfase);
+    text-align: center;
+    padding: 1em 0;
+    margin: 0;
+}
+
+.por_do_sol-dicas-lista {
+    list-style: square;
+    padding: 0 3em;
+}
+
+.por_do_sol-dicas-lista-item {
+    font-size: 0.9em;
+    font-family: var(--font-primaria);
+    font-weight: 300;
+    text-align: justify;
+    margin-bottom: 1em;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    color: var(--cor-roxo-enfase);
+}
+
+/*************** SECTION CONCLUSAO POR DO SOL ***************/
+
+.conclusao-subtitulo {
+    font-size: 1.4em;
+    font-weight: 500;
+    text-align: center;
+    color: var(--cor-laranja-warning);
+    margin: 0.5em 0 1em 0;
+    padding: 0;
+}
+
